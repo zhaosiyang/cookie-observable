@@ -2,7 +2,7 @@
 Read cookie as an observable
 
 ### Install
-```npm install cookie-observable```
+```npm install cookie-observable rxjs```
 
 ### Use
 ```javascript
