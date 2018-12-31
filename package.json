@@ -1,0 +1,29 @@
+{
+  "name": "cookie-observable",
+  "version": "1.0.0",
+  "description": "Cookie as an observable",
+  "main": "index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare" : "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhaosiyang/cookie-observable.git"
+  },
+  "keywords": ["cookie", "observable", "rxjs", "event", "stream"],
+  "author": "Siyang Zhao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhaosiyang/cookie-observable/issues"
+  },
+  "homepage": "https://github.com/zhaosiyang/cookie-observable#readme",
+  "devDependencies": {
+    "typescript": "^3.2.2"
+  },
+  "peerDependencies": {
+    "rxjs": "^6.3.3"
+  },
+  "files": ["lib/**/*"]
+}
