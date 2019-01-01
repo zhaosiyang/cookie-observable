@@ -14,5 +14,16 @@ export function getCookieObservable(): Observable<string> {
     return subject.asObservable();
 }
 
+export function cookieOnChange(callback: (cookie: string) => any) {
+    const key = 'cookie';
+    const target = Object.getPrototypeOf(Object.getPrototypeOf(document));
+    const setter = Object.getOwnPropertyDescriptor(target, key).set;
+    Object.defineProperty(target, key, {
+        set: value => {
+            setter.call(document, value);
+            callback(document.cookie);
+        }
+    });
+}
 
 

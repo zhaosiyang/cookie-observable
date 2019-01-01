@@ -2,12 +2,18 @@
 Read cookie as an observable
 
 ### Install
-```npm install cookie-observable rxjs```
+```npm install cookie-observable```
 
-### Use
+### Use (Choose either one)
+**1. observable**
 ```javascript
-getCookieObservable().subscribe(cookie => console.log('cookie'));
+getCookieObservable().subscribe(cookie => console.log(cookie));
 ```
+**2. callback**
+```javascript
+cookieOnChange(cookie => console.log(cookie));
+```
+
 
 
 
