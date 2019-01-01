@@ -1,6 +1,6 @@
 {
   "name": "cookie-observable",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Cookie as an observable",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
